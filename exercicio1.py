@@ -2,7 +2,7 @@ notas = []
 
 for i in range(3):
     nota = float(input('Nota: '))
-    if 0 <= nota <= 10:
+    if nota >= 0 and nota <= 10:
         notas.append(nota)
 
 def media(notas):
