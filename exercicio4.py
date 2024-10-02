@@ -1,5 +1,5 @@
 N = int(input('Elementos: '))
-K = int(input('K = '))
+K = int(input('K: '))
 
 X = []
 for i in range(N):
