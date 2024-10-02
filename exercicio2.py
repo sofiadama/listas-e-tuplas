@@ -1,7 +1,7 @@
-elementos = int(input('Quantidade de elementos: '))
+n = int(input('Quantidade de elementos: '))
 
 inteiros = []
-for i in range(elementos):
+for i in range(n):
     numero = int(input())
     inteiros.append(numero)
 
