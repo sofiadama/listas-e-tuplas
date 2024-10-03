@@ -1,9 +1,7 @@
 notas = []
-
 for i in range(3):
-    nota = float(input('Nota: '))
     if nota >= 0 and nota <= 10:
-        notas.append(nota)
+        notas.append(float(input(f'{i+1}º nota: ')))
 
 def media(notas):
     media = sum(set(notas))/len(set(notas))
