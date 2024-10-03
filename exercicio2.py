@@ -2,8 +2,7 @@ n = int(input('Quantidade de elementos: '))
 
 inteiros = []
 for i in range(n):
-    numero = int(input())
-    inteiros.append(numero)
+    inteiros.append(int(input(f'{i+1}º número: ')))
 
 if len(inteiros) != len(set(inteiros)):
     repetidos = inteiros.count(numero)
