@@ -3,9 +3,8 @@ K = int(input('K: '))
 
 X = []
 for i in range(N):
-    num = int(input())
-    X.append(num)
-
-for y in X:
-    produto = y*K
-    print(produto, end=' ')
+    X.append(int(input(f'{i+1}º número: ')))
+    
+print()
+for Y in X:
+    print(f'Produto de {Y} por {K}: {Y*K}')
