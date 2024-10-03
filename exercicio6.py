@@ -1,11 +1,13 @@
-atleta = input('Atleta: ')
+atleta = input('Atleta: ').title()
 
 saltos = []
-texto = ['Primeiro','Segundo','Terceiro','Quarto','Quinto']
 for i in range(5):
-    salto = float(input())
-    saltos.append(salto)
-    print(f'{texto[i]} salto: {saltos[i]} m')
+    saltos.append(float(input(f'{i+1}º salto: ')))
+
+print()
+ordem = ['Primeiro','Segundo','Terceiro','Quarto','Quinto']
+for i in range(len(saltos)):
+    print(f'{ordem[i]} salto: {saltos[i]} m')
 
 def media(saltos):
     saltos.remove(max(saltos))
@@ -13,9 +15,11 @@ def media(saltos):
     media = sum(saltos)/len(saltos)
     return media
 
+print()   
 print(f'Melhor salto: {max(saltos)} m')
 print(f'Pior salto: {min(saltos)} m')
 print(f'Média dos demais saltos: {media(saltos.copy()):.1f} m')
+
 print()
 print(f'Resultado final:')
-print(f'{atleta}: {media_saltos:.1f} m')
+print(f'{atleta} - {media(saltos.copy()):.1f} m')
